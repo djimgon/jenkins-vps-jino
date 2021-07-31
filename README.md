@@ -1,10 +1,10 @@
 # git-usefull
 
 # Развернуть проект из удаленного репозитория локально
--git init
--git remote add origin PATH/TO/REPO
--git fetch
--git checkout -t origin/main - для GITHUB, master - для Bitbucket
+- git init
+- git remote add origin PATH/TO/REPO
+- git fetch
+- git checkout -t origin/main - для GITHUB, master - для Bitbucket
 
 # удалить индексируемую папку из репозитория
 
