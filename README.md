@@ -8,9 +8,9 @@
 
 # удалить индексируемую папку из репозитория
 
--git filter-branch --tree-filter "rm -rf PATH" HEAD
--git push origin master --force
+- git filter-branch --tree-filter "rm -rf PATH" HEAD
+- git push origin master --force
 
 # Изменить владельца папки, пример
--sudo chown -R goohuunter:www-data lc-cert
+- sudo chown -R goohuunter:www-data lc-cert
 
