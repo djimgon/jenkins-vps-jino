@@ -10,6 +10,7 @@ services:
       DOCKER_TLS_VERIFY: 1
     volumes:
       - jenkins-data:/var/jenkins_home
+      - docker-certs:/certs/client
     depends_on:
       - docker
 
