@@ -7,7 +7,7 @@
         - curl
         - software-properties-common
       state: present
-      update_cache: yes
+      update_cache: no
 
 -   name: Add GPG key
     apt_key:
@@ -24,13 +24,13 @@
       repo: deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
       state: present
       filename: docker
-      update_cache: yes
+      update_cache: no
 
 -   name: Install Docker
     apt:
       name: docker-ce
       state: present
-      update_cache: yes
+      update_cache: no
     notify: Start docker on boot
 
 -   name: Install Docker Compose
